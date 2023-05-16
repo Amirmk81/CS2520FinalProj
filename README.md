@@ -1,7 +1,14 @@
-# cannon
-Набросок игры "Пушка"
+# Cannon Project
 
-Реализация ООП.
+Project Description:
+Final Assignment of CS2520 Group Members: Matthew Cheser, Amir Kouhpainejad, and Kevin Kongwattanachai
 
 
-Ссылка на старую игру пушка: http://judge.mipt.ru/mipt_cs_on_python3_2016/labs/lab10.html#id4
+
+The Cannon Game project is a continuation of the project that we did in class. The assignment tasks are as follows:
+
+Implement various types of projectiles.
+Develop several target types with different movement patterns.
+Transform the cannon into a moving tank.
+Create "bombs" that will be dropped by targets onto the cannon.
+Implement multiple cannons that can shoot at each other.
