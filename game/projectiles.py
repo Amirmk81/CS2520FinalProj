@@ -3,7 +3,7 @@ import pygame
 
 class projectilesThing:
     '''
-    The projectile class. Creates and implements the projectile.
+    The projectile class. Creates and implements the projectile and its usage will be for aiming through the game.
     '''
 
     xSpeed = 0
