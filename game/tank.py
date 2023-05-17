@@ -6,7 +6,7 @@ import pygame
 
 class tank:
     '''
-    The tank class. Creates and implements the tank.
+    This class implements the movements and function usage of the tanks.
     '''
 
     direction = 'none'
