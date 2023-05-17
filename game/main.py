@@ -6,7 +6,7 @@ import time
 import pygame
 
 print(pygame.ver)  # Print the version of Pygame
-
+#initializing the variable
 deltaTime = 0
 startTime = time.time()
 endTime = time.time()
