@@ -7,7 +7,7 @@ import pygame
 
 class plane:
     '''
-    The plane class. Creates and implements the planes.
+    The plane class. Creates and implements the planes. 
     '''
 
     direction = 'none'
