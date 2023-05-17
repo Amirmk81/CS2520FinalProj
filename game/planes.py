@@ -4,12 +4,12 @@ import random
 import time
 import pygame
 
-class tank:
+class plane:
 
     direction = 'none';
     speed = 50
     x = 600
-    y = 650
+    y = 50
     size = 25
     projectileType = 0
     reloadTime = 3;
@@ -50,7 +50,7 @@ class tank:
             #p.xSpeed = (targetX-self.x)/(targetY-self.y);
             #p.ySpeed = (targetY-self.y)/(targetX-self.x);
             print(self.x);
-            globals.proj.append(projectiles.projectilesThing(self.x,self.y-self.size-50,targetX,targetY));
+            globals.proj.append(projectiles.projectilesThing(self.x,self.y+self.size+50,0,0));
 
     def takeDmg(self, ammount):
         self.hp = self.hp - ammount;
@@ -59,7 +59,4 @@ class tank:
 
     def draw(self):
         #todo
-        if self.playerTank:
-            pygame.draw.circle(globals.canvas, (0, 255, 0), (self.x, self.y), self.size)
-        else:
-            pygame.draw.circle(globals.canvas, (255, 255, 255), (self.x, self.y), self.size)
+        pygame.draw.circle(globals.canvas, (255, 255, 255), (self.x, self.y), self.size)
