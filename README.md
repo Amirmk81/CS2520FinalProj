@@ -14,6 +14,7 @@ Create "bombs" that will be dropped by targets onto the cannon.
 Implement multiple cannons that can shoot at each other.
 
 ----- Instructions -----
+
 Run the main.py in the "game" folder to start the application.
 
 Use 'A' and 'D' to move, spacebar to shoot. 
