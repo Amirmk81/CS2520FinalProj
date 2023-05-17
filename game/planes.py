@@ -4,7 +4,11 @@ import random
 import time
 import pygame
 
+
 class plane:
+    '''
+        The plane class. creates and implements the planes
+    '''
 
     direction = 'none';
     speed = 50
@@ -19,6 +23,9 @@ class plane:
     alive = True;
 
     def runAI(self):
+        '''
+            Method to control movement and direction of planes
+        '''
         self.shoot(-200,-100);
         if(random.uniform(0, 1) > 0.9995):
             if(random.uniform(0, 1) > 0.6):
@@ -40,6 +47,9 @@ class plane:
 
 
     def shoot(self, targetX, targetY):
+        '''
+            Shoot method for planes
+        '''
         #print(self.reloadTimeLeft)
         if(self.reloadTimeLeft < 0):
             print("shoot");
@@ -53,10 +63,16 @@ class plane:
             globals.proj.append(projectiles.projectilesThing(self.x,self.y+self.size+50,0,0));
 
     def takeDmg(self, ammount):
+        '''
+            Damage method for planes
+        '''
         self.hp = self.hp - ammount;
         if(self.hp <= 0):
             self.alive = False;
 
     def draw(self):
+        '''
+            Drew method to draw the plane
+        '''
         #todo
         pygame.draw.circle(globals.canvas, (255, 255, 255), (self.x, self.y), self.size)

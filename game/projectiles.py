@@ -2,6 +2,9 @@ import globals
 import pygame
 
 class projectilesThing:
+    '''
+        The projectile class. creates and implements the projectile
+    '''
     xSpeed = 0;
     ySpeed = 0;
     x = 0;
@@ -30,4 +33,7 @@ class projectilesThing:
                 self.exist = False;
 
     def draw(self):
+        '''
+            Drew method to draw the projectile
+        '''
         pygame.draw.circle(globals.canvas, (255, 0, 0), (self.x, self.y), 10)

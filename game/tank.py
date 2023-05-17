@@ -5,6 +5,9 @@ import time
 import pygame
 
 class tank:
+    '''
+        The tank class. creates and implements the tank
+    '''
 
     direction = 'none';
     speed = 50
@@ -19,6 +22,9 @@ class tank:
     alive = True;
 
     def runAI(self):
+        '''
+            Method to control movement and direction of tanks
+        '''
         self.shoot(-200,-100);
         if(random.uniform(0, 1) > 0.9995):
             if(random.uniform(0, 1) > 0.6):
@@ -40,6 +46,9 @@ class tank:
 
 
     def shoot(self, targetX, targetY):
+        '''
+            Shoot method for tanks
+        '''
         #print(self.reloadTimeLeft)
         if(self.reloadTimeLeft < 0):
             print("shoot");
@@ -53,11 +62,17 @@ class tank:
             globals.proj.append(projectiles.projectilesThing(self.x,self.y-self.size-50,targetX,targetY));
 
     def takeDmg(self, ammount):
+        '''
+            Damage method for tanks
+        '''
         self.hp = self.hp - ammount;
         if(self.hp <= 0):
             self.alive = False;
 
     def draw(self):
+        '''
+            Drew method to draw the tank
+        '''
         #todo
         if self.playerTank:
             pygame.draw.circle(globals.canvas, (0, 255, 0), (self.x, self.y), self.size)
