@@ -1,3 +1,4 @@
+#main.py needs to be run for playing the game.
 from globals import *
 from tank import *
 from projectiles import *
