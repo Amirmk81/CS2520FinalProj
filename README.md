@@ -13,7 +13,7 @@ Transform the cannon into a moving tank.
 Create "bombs" that will be dropped by targets onto the cannon.
 Implement multiple cannons that can shoot at each other.
 
------ Instructions -----
+# ----- Instructions -----
 
 Run the main.py in the "game" folder to start the application.
 
