@@ -5,6 +5,7 @@ from projectiles import *
 from planes import *
 import time
 import pygame
+#need to import the following for the main class.
 
 print(pygame.ver)  # Print the version of Pygame
 #initializing the variable
